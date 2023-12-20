@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
+  box-shadow: 10px 0 10px;
+}
+nav header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav header a {
+  font-size: 35px;
+  color: rgb(50, 120, 147);
+}
+nav header h1 {
+  color: gray;
+}
+nav header h1 span {
+  color: rgb(50, 120, 147);
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid grey;
+  border-radius: 5px;
+  color: rgb(50, 120, 147);
+  transition: 0.5s;
+}
+.course-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.course-content .course-sec {
+  text-align: center;
+}
+.course-content .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.course-content .image img {
+  width: 350px;
+}
+.course-content .course-sec h2 {
+  color: rgb(50, 120, 147);
+}
+.course-content .course-sec .course-p {
+  color: gray;
+  margin: 20px 0;
+}
+
+.course-content .course-sec h2 span {
+  color: green;
+}
+.course-content .course-sec button {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(50, 120, 147);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.course-content .course-sec button:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  background-color: black;
+}
+
+/*info content başlangıç*/
+.info-content {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgb(50, 110, 160, 0.751);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  position: relative;
+}
+
+.info-content .info-sec {
+  text-align: center;
+  flex: 1;
+}
+.image-sec {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.info-content .info-sec h3 {
+  background-color: rgb(50, 120, 147);
+  color: white;
+  padding: 10px 20px;
+  border-top-right-radius: 50px;
+  position: absolute;
+  top: -20px;
+  width: 50%;
+}
+.info-content .info-sec p {
+  color: rgb(238, 232, 232);
+  margin: 20px 0;
+}
+.info-content .info-sec button {
+  border: none;
+  padding: 10px 20px;
+  background-color: yellow;
+  border-radius: 5px;
+  color: blue;
+  cursor: pointer;
+}
+.info-content .info-sec button:hover {
+  /*transform: scale(0.9);*/
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+/*info content bitis*/
+/*course card başlangıç*/
+.card-container {
+  margin-top: 50px;
+  text-align: center;
+}
+.card-container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: gray;
+  border-bottom: 1px solid;
+  border-radius: 50%;
+}
+.card-content {
+  display: flex;
+  justify-content: center; /*yatayda ortaladık*/
+}
+.card-content .card {
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card-content .card:hover {
+  transform: translateX(-5px);
+  transition: 0.5s;
+}
+.card-content .card button {
+  border: none;
+  padding: 3px 7px;
+  background-color: rgb(143, 241, 241);
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+.card-content .card img {
+  background-color: rgb(119, 115, 115);
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.card-content .card p mark {
+  background-color: rgb(143, 241, 241);
+  color: rgb(22, 21, 21);
+  border-radius: 5px;
+}
+.card-content .card p {
+  padding: 20px 20px;
+}
+
+/*footer başlangıç*/
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: gray;
+}
+.footer-start {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+footer .footer-start .footer-area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-start .footer-area a {
+  text-decoration: none;
+  color: black;
+}
+footer .bottom {
+  text-align: center;
+  margin-bottom: 20px;
+  border-top: 1px solid gray;
+  padding: 20px;
+}
+
+/*footer bitiş*/
+
+/*course card bitis*/
+
+@media (max-width: 800px) {
+  .course-content {
+    flex-direction: column-reverse;
+  }
+  .info-content {
+    flex-direction: column-reverse;
+  }
+  nav ul {
+    display: none;
+  }
+}
